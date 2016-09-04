@@ -1,0 +1,23 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>
+			Savvy Bunch
+		</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding class="accounts">
+
+	<ion-card>
+		<ion-card-header>
+			Koen Betsens
+		</ion-card-header>
+		
+		<ion-list>
+			<ion-item *ngFor="let item of accounts" (click)="itemSelected(item)">
+				{{item.name}}
+			</ion-item>
+		</ion-list>
+	</ion-card>
+
+</ion-content>
